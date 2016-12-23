@@ -1,6 +1,6 @@
 /* Move down content because we have a fixed navbar that is 50px tall */
 body {
-  padding-top: 50px;
+  padding-top: 25px;
   padding-bottom: 20px;
 }
 
@@ -13,7 +13,7 @@ nav {
 }
 
 .navbar-inverse {
-  background-color: #FFF;
+  background-color: #BDB76B;
   border-color: #DDD;
   font-size: 31px;
 }
@@ -39,8 +39,12 @@ nav {
 }
 
 .navbar-brand {
-  padding-top: 7px;
+  padding-top: 15px;
   padding-left: 15px;
+}
+
+.navbar-inverse .navbar-brand:hover {
+    color: black;
 }
 
 .contact-form {
