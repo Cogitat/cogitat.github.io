@@ -40,7 +40,7 @@
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-ex1-collapse" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -49,8 +49,8 @@
           <a class="navbar-brand" href="index.html">
             Cogitat
           </a>
-				</div>
-        <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+	</div>
+        <div class="collapse navbar-collapse navbar-right navbar-ex1-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
@@ -69,7 +69,7 @@
       <div class="row top-buffer">
         <div class="col-md-4 col-md-offset-2">
           <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
-          <form class="form-horizontal" method="post" action="https://script.google.com/macros/s/AKfycbyu2UAussu8hb4G1_3rV8ei4f2LePYfa5uWtXsAcTewSnRLHD4/exec" name="theForm" id="theForm" target="hidden_iframe" id="GoogleForm">
+          <form class="form-horizontal" method="post" action="https://script.google.com/macros/s/AKfycbyu2UAussu8hb4G1_3rV8ei4f2LePYfa5uWtXsAcTewSnRLHD4/exec" name="theForm" target="hidden_iframe" id="GoogleForm">
 						<div class="form-group">
               <input class="form-control" type="text" name="name" id="name" placeholder="Name"/>
 						</div>
@@ -83,7 +83,7 @@
               <textarea class="form-control" name="message" rows="5" id="message" placeholder="Message"></textarea>
 						</div>
             <div class="form-group">
-              <input class="btn btn-block btn-default" type="button" value="Send" class="submit"  onclick="checkBeforeSubmit();"/>
+              <input class="btn btn-block btn-default submit" type="button" value="Send" onclick="checkBeforeSubmit();"/>
 							<div id="success" class="alert alert-success small-top-buffer" hidden="true" role="alert">Sent</div>
             </div>
           </form>
